@@ -66,3 +66,48 @@ aside.rightaside div{
     margin-top: 5%;
 }
 
+@media screen and (max-width: 550px){
+    aside.rightaside{
+        border-radius: 100%;
+        width: 11%;
+        flex: 1 0 10%;
+        align-self: flex-end;
+        margin-right: 5%;
+        margin-bottom: 5%;
+    }
+    aside.rightaside div{ 
+        display: none;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    aside.leftaside{
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 1 0 13%
+    }
+    aside.leftaside p{
+        box-sizing: border-box;
+        width: 8%;
+        height: 50%;
+        padding: 0%;
+        padding-top: 2%;
+        margin-left: 3%;
+        
+    }
+    aside.leftaside div{
+    display: none;
+    }
+
+    main{
+        flex: 1 0 77%
+    }
+
+
+    main form{
+        border: none;
+    }
+
+}
